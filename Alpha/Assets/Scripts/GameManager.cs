@@ -90,14 +90,18 @@ public class GameManager : MonoBehaviour
     public void mejorarDash()
     {if(jugador.partes>=precio1)
         {
+            jugador.partes -= precio1;
             PlayerPrefs.SetFloat("KeyfuerzaDash", PlayerPrefs.GetFloat("KeyfuerzaDash") + 5);
+            
         FindObjectOfType<MovimientoJugador>().fuerzaDash += 5;
+            Debug.Log(FindObjectOfType<MovimientoJugador>().fuerzaDash);
         }
     }
     public void mejorarDrag()
     {
         if (jugador.partes >= precio2)
         {
+            jugador.partes -= precio2;
             PlayerPrefs.SetFloat("Keydrag", PlayerPrefs.GetFloat("Keydrag") + 1.5f);
         FindObjectOfType<Habilidades>().drag += 1.5f;
         }
@@ -106,6 +110,7 @@ public class GameManager : MonoBehaviour
     {
         if (jugador.partes >= precio3)
         {
+            jugador.partes -= precio3;
             PlayerPrefs.SetFloat("KeyporcentajePoderCaida", PlayerPrefs.GetFloat("KeyporcentajePoderCaida") + 0.15f);
         FindObjectOfType<Habilidades>().porcentajepoderCaida += 0.2f;
         }
@@ -114,6 +119,7 @@ public class GameManager : MonoBehaviour
     {
         if (jugador.partes >= precio4)
         {
+            jugador.partes -= precio4;
             PlayerPrefs.SetFloat("KeyvelArma", PlayerPrefs.GetFloat("KeyvelArma")+0.5f);
         FindObjectOfType<Habilidades>().velArma += 0.5f;
 
