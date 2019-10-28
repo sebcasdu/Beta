@@ -4,7 +4,7 @@ Entrega Juego Beta
 
 Para el desarrollo de esta beta se han usado varios elementos de internet listados a continuacion:
 
-los siguientes modelos fueron obtenidos de https://www.turbosquid.com
+los siguientes modelos fueron obtenidos de https://www.turbosquid.com:
 3d model Bomb  by "evilvoland",
 3d model RubberDuck By "Marc Mons",
 3D model R2 unit by "Skopy",
